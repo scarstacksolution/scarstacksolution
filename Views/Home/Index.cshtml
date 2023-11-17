@@ -1,0 +1,455 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Scarstack Solution</title>
+
+    <!-- Bootstrap Jumbotron -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/jumbotron/">
+    <!-- Bootstrap Heroes -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/">
+    <!-- Bootstrap Album -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Poppins Text font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Swiper.js CSS & JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Bootstrap CSS and JavaScript (version 5.3.1) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        /* ^^ Swipper styling ^^ */
+        .swiper-container {
+            overflow-x: hidden; /* Control width overflow here*/
+        }
+        .card-container {
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            flex: 0 0 290px;
+            margin-right: 0px;
+            background: none;
+            overflow-y:auto; /* Control length of card here*/
+        }
+        .card-img-top {
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Carousel -->
+        <div class=row>
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/carousel2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/carousel3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/carousel1.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <!-- Jumbotron effect-->
+        <div class="container py-4">
+            <header class="pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z" />
+                    </svg>
+                    <h2><span class="fs-8">&nbsp;&nbsp;Immersive Tech Solutions and Trainings</span></h2>
+                </a>
+            </header>
+
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">IT Career Trainings</h1>
+                    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                    <button class="btn btn-primary btn-lg" type="button">Learn more</button>
+                </div>
+            </div>
+
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-dark rounded-3">
+                        <h2>IT Solutions and Services</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-light" type="button">Learn more</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>IT Career Courses</h2>
+                        <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+                        <button class="btn btn-outline-secondary" type="button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swipper container -->
+        <div class="container-fluid mt-5">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://wallpapercave.com/download/microsoft-azure-wallpapers-wp3734333" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: purple; font-size: larger;">Cloud Solution Architect</h5>
+                            <br />
+                            <p class="card-text">Cloud Solution Architects earn an average of between $132,000 - $207,000 per annum.</p>
+                            <ul class="list-group list-group-flush" style="color: #E1DEE0">
+                                <li class="list-group-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                                    </svg>
+                                    &nbsp;Training Cost: $960.00 /20% off Holiday discount
+                                </li>
+                                <li class="list-group-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop-fill" viewBox="0 0 16 16">
+                                        <path d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                                    </svg>
+                                    &nbsp;Training Style: Virtual
+                                </li>
+                                <li class="list-group-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                                        <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+                                        <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                    </svg>
+                                    &nbsp;Certification You'll earn:<br>Microsoft Certified Azure Solution Expert
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://wallpapercave.com/download/data-structure-wallpapers-wp9165374" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: purple; font-size: larger;">Data Analytics and SQL</h5>
+                            <p class="card-text">Data Analysts earn an average of between $80,000 - $126,000 per annum.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Training Style: Virtual delivery</li>
+                                <li class="list-group-item">Annual Salary for Role:<br>$80,000.00 - $126,000.00</li>
+                                <li class="list-group-item">Certification You'll earn:<br>IBM Data Analyst Professional Certificate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://wallpapercave.com/download/full-stack-developer-wallpapers-wp11346428" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: purple; font-size: larger;">Senior Fullstack Engineer</h5>
+                            <p class="card-text">Fullstack Engineers earn an average of between $126,000 - $206,000 per annum.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Training Style: Virtual delivery</li>
+                                <li class="list-group-item">Annual Salary for Role:<br>$126,000.00 - $206,000.00</li>
+                                <li class="list-group-item">Certification You'll earn:<br>Microsoft Certified Azure Developer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://wallpapercave.com/download/scrum-wallpapers-wp10306581" class=" card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: purple; font-size: larger;">Senior Scrum Master</h5>
+                            <p class="card-text">Senior Scrum Masters earn an average of between $106,000 - $157,000 per annum.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Training Style: Virtual delivery</li>
+                                <li class="list-group-item">Annual Salary for Role:<br>$106,000.00 - $157,000.00</li>
+                                <li class="list-group-item">Certification You'll earn:<br>Certified Scrum Master (CSM), SAFe® Scrum Master</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://c0.wallpaperflare.com/preview/698/633/73/start-up-start-up-revenue.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: purple; font-size: larger;">Senior DevOps Engineer</h5>
+                            <p class="card-text">Senior DevOps Engineers earn an average of between $110,000 - $175,000 per annum.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Training Style: Virtual delivery</li>
+                                <li class="list-group-item">Annual Salary for Role:<br>$110,000.00 - $175,000.00</li>
+                                <li class="list-group-item">Certification You'll earn:<br>Microsoft Certified Azure Solution Expert</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://wallpapercave.com/download/javascript-wallpapers-wp2465915" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: purple; font-size: larger;">MEAN Stack Developer</h5>
+                            <p class="card-text">MEAN Stack Developers earn an average of between $72,000 - $130,000 per annum.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Training Style: Virtual delivery</li>
+                                <li class="list-group-item">Annual Salary for Role:<br>$72,000.00 - $130,000.00</li>
+                                <li class="list-group-item">Certification You'll earn:<br>Masters Certified MEAN Stack Developer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+        <div class="row">
+            <!-- Heroes effect -->
+            <div class="px-4 pt-5 my-5 text-center border-bottom">
+                <h1 class="display-4 fw-bold">Who we are</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">At Scarstack, we provide outstanding technology services and IT training services to help individuals and businesses achieve their IT goals and careers. Our team offers customized training programs and innovative technology solutions tailored to meet clients' specific needs.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Technologies</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact us</button>
+                    </div>
+                </div>
+                <div class="overflow-hidden" style="max-height: 30vh;">
+                    <div class="container px-5">
+                        <img src="images/coloreffect.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="b-example-divider"></div>
+
+            <div class="container my-5">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                        <h1 class="display-4 fw-bold lh-1">New IT Trainings kickoff November 28th!</h1>
+                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Enroll now</button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                        <img class="rounded-lg-3" src="images/it-training-kickoff.png" alt="" width="720">
+                    </div>
+                </div>
+            </div>
+
+            <div class="b-example-divider"></div>
+
+            <div class="bg-dark text-secondary px-4 py-5 text-center">
+                <div class="py-5">
+                    <h1 class="display-5 fw-bold text-red">Our Services</h1>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="fs-5 mb-4">
+                            Our team utilize cutting-edge technologies to deliver astonishing mobile or website design and SEO optimization, while our comprehensive IT Trainings and courses help individuals achieve their career potential.
+                        </p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Trainings</button>
+                            <button type="button" class="btn btn-outline-light btn-lg px-4">Solutions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-example-divider mb-0"></div>
+        </div>
+
+        <div class="row">
+            <!-- Bootstrap Album -->
+            <div class="album py-5">
+                <header class="pb-3 mb-4 border-bottom">
+                    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-laptop-fill" viewBox="0 0 16 16">
+                            <path d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                        </svg>
+                        <h2><span class="fs-8">&nbsp;&nbsp;Our Comprehensive IT Trainings</span></h2>
+                    </a>
+                </header>
+                <!--div class="album py-5 bg-light"-->
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/azure.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="azure image" loading="lazy">
+                                <div class="card-body">
+                                    <h3 style="color:purple">Cloud Solution Architect</h3><br>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/analytics.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="fullstack image" loading="lazy">
+                                <div class="card-body">
+                                    <h3 style="color:purple">Data Analyst (Analytics)</h3><br>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/fullstack1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
+                                <div class="card-body">
+                                    <h3 style="color:purple">Full Stack Engineer</h3><br>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/mean-stack.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
+                                <div class="card-body">
+                                    <h3 style="color:purple">MEAN Stack Developer</h3><br>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/scrum.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
+                                <div class="card-body">
+                                    <h3 style="color:purple">Senior Scum Master</h3><br>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/devops.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy">
+                                <div class="card-body">
+                                    <h3 style="color:purple">Senior DevOps Engineer</h3><br>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=row>
+            <!-- Column 1 -->
+            <div class="md-3">
+
+            </div>
+            <!-- Column 2 -->
+            <div class="md-">
+
+            </div>
+            !-- Column 2 -->
+            <div class="md-3">
+
+            </div>
+        </div>
+    </div>
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Swipper logic 1
+            var mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                freeMode: {
+                    enabled: true,
+                    sticky: true,
+                },
+                spaceBetween: 25,
+                loop: true,  // Enables infinite loop
+                autoplay: {
+                    delay: 3000,  // Scrolls every 3 seconds
+                }
+            });
+        </script>
+</body>
+</html>
